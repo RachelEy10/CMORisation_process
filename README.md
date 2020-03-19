@@ -32,7 +32,7 @@ f) Login
     [passphrase]
 
     3.SSH to login server
-    ssh -A <mosrs username>@jasmin-login1.ceda.ac.uk 
+    ssh -A <jasmin username>@jasmin-login1.ceda.ac.uk 
 
     4. SSH to jasmin-cylc server
     ssh -A jasmin-cylc.ceda.ac.uk 
