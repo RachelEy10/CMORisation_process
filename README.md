@@ -20,7 +20,8 @@ https://accounts.jasmin.ac.uk/services/reverse_dns_check/
 
 d) Request ssh login access to JASMIN
 
-e) Apply for cmip6-prep GWS access
+e) Apply for GWS access
+Depending on the access you need, I needed cmip6-prep and pmip4
 
 f) Login
 
