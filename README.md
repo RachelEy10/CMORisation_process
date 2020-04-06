@@ -21,7 +21,8 @@ https://accounts.jasmin.ac.uk/services/reverse_dns_check/
 d) Request ssh login access to JASMIN
 
 e) Apply for GWS access
-Depending on the access you need, I needed cmip6-prep and pmip4
+
+E.g. cmip6-prep and pmip4.
 
 f) Login
 
@@ -30,7 +31,7 @@ f) Login
 
     2. Add JASMIN private key
     ssh-add ~/.ssh/id_rsa_jasmin
-    [passphrase]
+    [jasmin passphrase]
 
     3.SSH to login server
     ssh -A -X <jasmin username>@jasmin-login1.ceda.ac.uk 
@@ -46,6 +47,9 @@ Several NEMO data sets need to be pre-processed to remove halos prior to process
 
     b) Add bash profile if necessary 
     cp /home/users/glister/.bash_profile /home/users/<username>/.bash_profile
+    
+    Same with bashrc
+    cp /home/users/glister/.bashrc /home/users/<username>/.bashrc
 
     c) Configure your ~/.subversion/servers file
     https://code.metoffice.gov.uk/trac/home/wiki/FAQ
@@ -63,6 +67,8 @@ Several NEMO data sets need to be pre-processed to remove halos prior to process
     If ~/.subversion/servers does not exist, run svn once on the command line. 
 
     3. Cache password
+    https://code.metoffice.gov.uk/trac/home/wiki/AuthenticationCaching 
+    
     [log out and log in again]
     mosrs-cache-password
     
@@ -84,6 +90,15 @@ Several NEMO data sets need to be pre-processed to remove halos prior to process
     rosie go
     [MOSRS password]
     [pop-up window]
+    
+    5. rosie GUI
+    
+    Follow instructions: http://cms.ncas.ac.uk/wiki/CDDS/halo
+
+# 4. Conversion process
+
+
+    
     
     
     
