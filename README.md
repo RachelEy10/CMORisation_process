@@ -15,14 +15,11 @@ https://accounts.jasmin.ac.uk/account/profile/
 
 c) Check network details
 
-Institution's network domain must be .ac.uk
-https://accounts.jasmin.ac.uk/services/reverse_dns_check/
+Institution's network domain must be .ac.uk: https://accounts.jasmin.ac.uk/services/reverse_dns_check/
 
 d) Request ssh login access to JASMIN
 
-e) Apply for GWS access
-
-E.g. cmip6-prep and pmip4.
+e) Apply for GWS access (e.g. cmip6-prep and pmip4)
 
 f) Login
 
@@ -103,29 +100,29 @@ b) cd to the experiment directory - all work should take place here
 
 c) Copy the conversion process orchestration script cdds_workflow_for_users.sh from central-location to this directory:
 
-cdds v1.3.2: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful-Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v132.sh
+    cdds v1.3.2: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful        Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v132.sh
 
-cdds v1.3.3: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful-Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v133.sh
+    cdds v1.3.3: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful-Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v133.sh
 
 d) Rename the script
 
-mv cdds_workflow_for_user_v132.sh cdds_workflow_for_user.sh
+    mv cdds_workflow_for_user_v132.sh cdds_workflow_for_user.sh
 
 e) Edit the script to set the environment variables CDDS_DIR, REQUEST_JSON and FILEPATHSNAME
 
-export CDDS_DIR = "/gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test"
-REQUEST_JSON = <name of json file>.json
-export FILEPATHSTYPE = "ARCHER"
+    export CDDS_DIR = "/gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test"
+    REQUEST_JSON = ba469_json
+    export FILEPATHSTYPE = "ARCHER"
 
 f) Create the json request file, with the same name as REQUEST_JSON
 
-CDDS workflow driven by json request file, which holds info about MIP, experiment, streams to be processed, start & end dates, source model suite id etc. 
+The CDDS workflow is driven by the json request file, which holds info about MIP, experiment, streams to be processed, start & end dates, source model suite id etc. 
 
 g) Begin the CDDS process:
 
-source cdds_workflow_for_user.sh
+    source cdds_workflow_for_user.sh
 
-    
+[error]
     
     
     
