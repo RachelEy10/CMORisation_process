@@ -100,7 +100,7 @@ b) cd to the experiment directory - all work should take place here
 
 c) Copy the conversion process orchestration script cdds_workflow_for_users.sh from central-location to this directory:
 
-    cdds v1.3.2: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful        Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v132.sh
+    cdds v1.3.2: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful-Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v132.sh
 
     cdds v1.3.3: wget https://raw.githubusercontent.com/NCAS-CMS/NCAS-Useful-Documentation/master/cdds_operationl_scripts/cdds_workflow_for_user_v133.sh
 
