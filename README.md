@@ -111,7 +111,7 @@ d) Rename the script
 e) Edit the script to set the environment variables CDDS_DIR, REQUEST_JSON and FILEPATHSNAME
 
     export CDDS_DIR = "/gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test"
-    REQUEST_JSON = ba469_json
+    REQUEST_JSON = ba469_json.json
     export FILEPATHSTYPE = "ARCHER"
 
 f) Create the json request file, with the same name as REQUEST_JSON
@@ -123,6 +123,30 @@ g) Begin the CDDS process:
     source cdds_workflow_for_user.sh
 
 [error]
+
+    No JSON object could be decoded
+    Traceback (most recent call last):
+      File "/gws/smf/j04/cmip6_prep/cdds-env/r7785_trunk_cdds_v132/cdds_prepare/cdds_prepare/command_line.py", line 46, in main_create_cdds_directory_structure
+        create_cdds_directory_structure(args)
+      File "/gws/smf/j04/cmip6_prep/cdds-env/r7785_trunk_cdds_v132/cdds_prepare/cdds_prepare/directory_structure.py", line 26, in create_cdds_directory_structure
+        request = read_request(arguments.request, REQUIRED_KEYS_FOR_PROC_DIRECTORY)
+      File "/gws/smf/j04/cmip6_prep/cdds-env/r7785_trunk_cdds_v132/hadsdk/hadsdk/request.py", line 43, in read_request
+        items = read_json(request_path)
+      File "/gws/smf/j04/cmip6_prep/cdds-env/r7785_trunk_cdds_v132/hadsdk/hadsdk/common.py", line 188, in read_json
+        data = json.load(file_handle)
+      File "/gws/smf/j04/cmip6_prep/jaspy_base/jaspy/miniconda_envs/jaspy2.7/m2-4.6.14/envs/cdds-env-r20200204/lib/python2.7/json/__init__.py", line 291, in load
+        **kw)
+      File "/gws/smf/j04/cmip6_prep/jaspy_base/jaspy/miniconda_envs/jaspy2.7/m2-4.6.14/envs/cdds-env-r20200204/lib/python2.7/json/__init__.py", line 339, in loads
+        return _default_decoder.decode(s)
+      File "/gws/smf/j04/cmip6_prep/jaspy_base/jaspy/miniconda_envs/jaspy2.7/m2-4.6.14/envs/cdds-env-r20200204/lib/python2.7/json/decoder.py", line 364, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "/gws/smf/j04/cmip6_prep/jaspy_base/jaspy/miniconda_envs/jaspy2.7/m2-4.6.14/envs/cdds-env-r20200204/lib/python2.7/json/decoder.py", line 382, in raw_decode
+        raise ValueError("No JSON object could be decoded")
+    ValueError: No JSON object could be decoded
+    /gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test//create_cdds_directory_structure_2020-04-08T1317Z.log:Traceback (most recent call last):
+    /gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test//create_cdds_directory_structure_2020-04-08T1355Z.log:Traceback (most recent call last):
+    /gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test//create_cdds_directory_structure_2020-04-08T1507Z.log:Traceback (most recent call last):
+    Found Python Traceback in /gws/nopw/j04/pmip4_vol2/users/racheley/cmor_test//*create_cdds_directory_structure*.log*. Stopping.
     
     
     
